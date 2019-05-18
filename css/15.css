@@ -1,0 +1,35 @@
+
+#manufactorer-about .head-title .heading {
+    margin-bottom: 0;
+}
+#manufactorer-about .head-title .back {
+    padding: 0;
+}
+#manufactorer-about .head-buttons .flat-button {
+    margin-left: 20px;
+}
+#manufactorer-about .manufactorer-contacts {
+    padding-bottom: 2rem;
+}
+#manufactorer-about .manufactorer-contacts .more-info {
+    margin-top: 1rem;
+}
+
+#manufactorer-about .manufactorer-activities .activity-name::before {
+    content: "•";
+    color: #D09A3F;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+#manufactorer-about .manufactorer-activities .heading {
+    margin-bottom: 50px;
+}
+#manufactorer-about .manufactorer-activities .activity {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+#manufactorer-about .manufactorers-near {
+    height: 75px;
+    margin-bottom: 50px;
+}

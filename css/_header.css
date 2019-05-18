@@ -1,0 +1,40 @@
+.navbar {
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    padding-left: 50px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    height: 80px;
+    width: 490px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+.navbar-brand .logo {
+    margin-right: 1rem;
+}
+.navbar-phone .phone-number {
+    font-size: 1.5rem;
+    line-height: normal
+}
+.navbar-profile img {
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-profile .profile-info {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+}
+.navbar-profile .profile-photo {
+    background-color: #F8F8F8;
+}
+.nav-button {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-left: 1px solid #E5E5E5;
+    background-color: #fff;
+}

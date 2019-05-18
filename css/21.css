@@ -1,0 +1,40 @@
+#order {
+    margin-bottom: 5rem;
+}
+#order .row > p {
+    margin-top: 2rem;
+}
+#order .form-group input, 
+#order .form-group select {
+    width: 546px;
+    height: 50px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+}
+#order .form-group {
+    margin-top: 37px;
+}
+#order form p {
+    margin-top: 70px;
+}
+#order form .add {
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+#order form .add span {
+    margin-left: 1rem;
+}
+.order-done {
+    padding-bottom: 100px;
+}
+.order-done .order-products {
+    margin-top: 0;
+    width: 600px;
+}
+.order-done .order-print a {
+    margin-top: 0.75rem;
+}
+.order-done .order-products .button-large {
+    width: 434px;
+}

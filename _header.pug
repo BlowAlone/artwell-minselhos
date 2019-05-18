@@ -1,0 +1,23 @@
+append styles
+	// Custom styles for this template
+	link(href='../css/_header.css', rel='stylesheet')
+block header
+	nav.navbar.d-flex.align-items-center.justify-content-space-between
+		a.navbar-brand.d-flex.align-items-center(href="#")
+			img.logo(src="../img/logo.svg", alt="logo", srcset="")
+			div.d-inline-block СПАК управления развитием сельского и лесного<br> хозяйства с подсистемой картографии
+		.navbar-phone Тех. поддержка: <br>
+			span.phone-number 8 800 123-23-34
+		.navbar-profile.d-flex.align-items-center
+			img.profile-photo(src="../img/avatar.svg", alt="profile photo", srcset="")
+			.profile-info.d-flex.flex-column.align-items-baseline
+				span.profile-name Николаева Н.В.
+				a(href="#") Выйти 
+			.profile-order-info.d-flex.flex-column.align-items-baseline
+				a(href="29.html") Мои заказы
+				span 0 Р
+		.navbar-buttons.d-flex
+			button.nav-button.d-flex.align-items-center.justify-content-center
+				img(src="../img/icon-mail.png", alt="")
+			button.nav-button.d-flex.align-items-center.justify-content-center
+				img(src="../img/icon-search.png", alt="")

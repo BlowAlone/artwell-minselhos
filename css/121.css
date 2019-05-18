@@ -1,0 +1,85 @@
+.map-company .search,
+.map-company .filter-city {
+    width: 320px;
+    height: 50px;
+}
+.map-company button {
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+}
+.map-company .search input {
+    border: 0;
+    height: 50px;
+    width: 278px;
+    padding: 10px;
+}
+.map-company input:focus {
+    outline: 1px solid #D19B3F;
+}
+.map-company button:focus {
+    outline: none;
+}
+.map-company .search button {
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+}
+.map-company .filter-city {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.map-company .filter-city .msh-select{
+    width: 100%;
+    height: 100%;
+}
+.map-company .filter-city .msh-select select {
+    width: 100%;
+    height: 100%;
+}
+.company-list {
+ max-height: 700px;
+ overflow-y: scroll
+}
+.company-list::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.company-list::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.company-list::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #D19B3F;
+}
+.company-list__item {
+    max-width: 250px;
+    height: 160px;
+    position: relative;
+}
+.company-list .company-list__item .number {
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+.company-list .company-list__item a {
+    text-decoration: none;
+}
+.company-list .company-list__item .phone-number {
+    font-size: 18px;
+}
+.company-list {
+    -webkit-overflow-scrolling: touch;
+
+}
+.company-map {
+    background: url("../img/map-company.png") no-repeat center / contain;
+    width: 100%;
+    height: 100%;
+}

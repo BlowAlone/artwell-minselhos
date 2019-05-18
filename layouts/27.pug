@@ -1,0 +1,60 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/27.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.add-shops
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.no-decor.small(href="#") Конструктор магазина
+				p.heading Добавление категорий
+				a.small(href="#") В личный кабинет &#8592;
+		.add-category
+			.row
+				.col-6
+					p Добавленные категории
+				.col-6
+					p Товары по акции:
+			.row 
+				.col-2
+					ul
+						li Молочное
+						li Мясное
+						li Свинодельческое
+						li Молочно-Овощное
+						li Овощное
+						li Птицеводческое
+				.col-2
+					a(href="#") Добавить товар в категорию
+					a(href="#") Добавить товар в категорию
+					a(href="#") Добавить товар в категорию
+					a(href="#") Добавить товар в категорию
+					a(href="#") Добавить товар в категорию
+					a(href="#") Добавить товар в категорию
+				.col-2
+					a(href="#") Удалить категорию
+					a(href="#") Удалить категорию
+					a(href="#") Удалить категорию
+					a(href="#") Удалить категорию
+					a(href="#") Удалить категорию
+					a(href="#") Удалить категорию
+				.col-6
+					.d-flex.flex-column
+						select
+							option(value="" selected)
+								.d-flex.justify-content-between
+									span Выбрать категорию
+									span 
+							option(value="") Юридическое лицо
+						select
+							option(value="" selected) Физическое лицо
+							option(value="") Юридическое лицо
+						
+
+
+
+block footer
+	include ../_footer.pug

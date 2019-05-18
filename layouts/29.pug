@@ -1,0 +1,97 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/29.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.order-pending
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.small(href="#") Мои заказы
+				.order-panel.d-flex.justify-content-between.align-items-center
+					a(href="30.html") Неоформленные заказы
+					a.heading(href="#") Заказы в ожидании
+					a(href="31.html") Архив заказов
+		.order-pending__items.d-flex.justify-content-center
+			.order-products.bg-fcfcfc
+				.order-products__wrapper
+					.heading Сельскохозяйственное предприятие № 234
+					.order-number Заказ №23456
+					.category-list
+						a.category-name.small(href="#") Молочная продукция
+						.order-item.d-flex
+							span Молоко
+							hr
+							span 20ящ.
+						.order-item.d-flex
+							span Сметана
+							hr
+							span 5ящ.
+					.category-list
+						a.category-name.small(href="#") Мясная продукция
+						.order-item.d-flex
+							span Мясо
+							hr
+							span 50кг.
+						.order-item.d-flex
+							span Фарш
+							hr
+							span 19кг.
+					.total-price
+							.color-main.small Оплачено
+							.order-price.d-flex.align-items-center.justify-content-between
+								.price 19 456 Р
+								a.small(href="#") Распечатать чек
+					.delivery-date
+						.color-main.small Дата доставки:
+						.delivery-date__info.d-flex.align-items-center.justify-content-between
+							.date 17.12.2018
+							a.small(href="#") Отследить заказ
+				.msh-buttons
+					a.flat-button.bg-main(href="#")
+						span Принять заказ
+					a.flat-button.bg-gray(href="#")
+						span Пожаловаться
+			.order-products.bg-fcfcfc
+				.order-products__wrapper
+					.heading Сельскохозяйственное предприятие № 5
+					.order-number Заказ №23455
+					.category-list
+						a.category-name.small(href="#") Молочная продукция
+						.order-item.d-flex
+							span Молоко
+							hr
+							span 20ящ.
+						.order-item.d-flex
+							span Сметана
+							hr
+							span 5ящ.
+					.category-list
+						a.category-name.small(href="#") Мясная продукция
+						.order-item.d-flex
+							span Мясо
+							hr
+							span 50кг.
+						.order-item.d-flex
+							span Фарш
+							hr
+							span 19кг.
+					.total-price
+							.color-main.small Оплачено
+							.order-price.d-flex.align-items-center.justify-content-between
+								.price 19 456 Р
+								a.small(href="#") Распечатать чек
+					.delivery-date
+						.color-main.small Дата доставки:
+						.delivery-date__info.d-flex.align-items-center.justify-content-between
+							.date 17.12.2018
+							a.small(href="#") Отследить заказ
+				.msh-buttons
+					a.flat-button.bg-lightgray(href="#") 
+						span Ожидается доставка
+					a.flat-button.bg-gray(href="#") 
+						span Пожаловаться
+block footer
+	include ../_footer.pug

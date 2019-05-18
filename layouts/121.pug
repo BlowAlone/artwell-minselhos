@@ -1,0 +1,94 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/121.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container.map-company
+		.row
+			.col-3.d-flex.flex-column
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+				.search.d-flex.justify-content-between
+					input(type="text", name="filter-search" placeholder="Поиск по производителям")
+					button.d-inline-block
+						img(class="icon-search", src="../img/icon-search.png", alt="")
+				.filter-city.d-flex.justify-content-between.align-items-center
+					.msh-select
+						select
+							option(value="" selected) Выбрать город
+							option
+				.company-list
+					.company-list__item
+						div.number 1.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 2.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 3.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 4.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 5.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 5.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 5.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+					.company-list__item
+						div.number 5.
+						.d-flex.flex-column
+							span Сельскохозяйственное предприятие № 234
+							.d-flex.justify-content-between.align-items-center
+								span.product-price 56 Р
+								a(href="#") Заказать
+							.phone-number 8 800 234-34-34
+
+					
+			.col-9
+				.company-map
+
+block footer
+	include ../_footer.pug

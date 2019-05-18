@@ -1,0 +1,167 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/96.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.gektar
+		.head-wrapper
+			.row
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.row
+				p.heading Эффективный гектар. Умное землепользование
+		.filter-selhos
+			.row.d-flex.justify-content-between.align-items-center
+				.region-choose.col-6.d-flex.align-items-center
+					a.black-link(href="#")
+						img(class="icon-search", src="../img/icon-search.png", alt="")
+						span Выберите регион
+				.col-6
+					label.selhos-search-label.d-flex.align-items-center(for="selhos-choose")
+						span Сельхозугодие
+						input(type="text", name="selhos-choose", placeholder="пашни, сенокосыпастбища, многолетние насаждения")
+			.planned-to-grow.row.d-flex.justify-content-between.align-items-center
+				.col-12.d-flex.align-items-center
+					label.selhos-search-label(for="selhos-choose")
+						span Культура, которую планируется выращивать
+					input(type="text", name="selhos-choose", placeholder="Масляничные")
+					a(href="#")
+						img(class="icon-down-arrow", src="../img/icon-down-arrow.png", alt="")
+			.planned-to-grow.row.d-flex.align-items-center
+				.col-5
+					a.black-link(href="#") Планируемый урожай
+				.col-5
+					a.black-link(href="#") Максимальные расходы за сезон
+			.agroecology-top.row.d-flex.aling-items-center
+				span Агроэкология почвы: заполняется по желанию (параметры выбрала схематично)
+				a(href="#")
+					img(class="icon-down-arrow", src="../img/icon-down-arrow.png", alt="")
+				a.gray-link(href="#") Свернуть
+		.agroecology#agroecology
+			.row.agroecology-item
+				.col-6
+					span Название почвы
+				.col-6
+					input(type="text" placeholder="Дерново-подзолистая")
+			.row.agroecology-item
+				.col-6
+					span Мощность гумусового горизонта, см
+				.col-6
+					input(type="text" placeholder="20")
+			.row.agroecology-item
+				.col-6
+					span Содержание подвижного фосфора, мг/кг
+				.col-6
+					input(type="text" placeholder="263")
+			.row.agroecology-item
+				.col-6
+					span Содержание обменного калия, мг/кг
+				.col-6
+					input(type="text" placeholder="214")
+			.row.agroecology-item
+				.col-6
+					span Содержание минеральных форм азота, мг/кг
+				.col-6
+					input(type="text" placeholder="нет данных")
+			.row.agroecology-item
+				.col-6
+					span Кислотность почвы (pНКCl)
+				.col-6
+					input(type="text" placeholder="6,2")
+			.row.agroecology-item
+				.col-6
+					span Гидролитическая кислотность, мг-экв/100 г почвы
+				.col-6
+					input(type="text" placeholder="0,4")
+			.row.agroecology-item
+				.col-6
+					span Плотность почв, г/см3
+				.col-6
+					input(type="text" placeholder="нет данных")
+			.row.agroecology-item
+				.col-6
+					span Ca, мг/кг почвы
+				.col-6
+					input(type="text" placeholder="18,2")
+			.row.agroecology-item
+				.col-6
+					span Mg, мг/кг почвы
+				.col-6
+					input(type="text" placeholder="3,1")
+			.row.agroecology-item
+				.col-6
+					span B, мг/кг почвы
+				.col-6
+					input(type="text" placeholder="0,37")
+
+
+					
+		.free-gektars
+			p.heading Подходящие свободные гектары:
+			.d-flex.flex-column
+				.gektars-item.row.d-flex.align-items-center
+					.col-1
+						span id23456
+					.col-3
+						span пос. Аракчино (234,345)
+					.col-2
+						span г. Краснодар
+					.col-3
+						span Николаев И.И.
+					.col-3
+						button.flat-button.bg-main Перейти к паспорту объекта
+				.gektars-item.row.d-flex.align-items-center
+					.col-1
+						span id23456
+					.col-3
+						span пос. Аракчино (234,345)
+					.col-2
+						span г. Краснодар
+					.col-3
+						span Николаев И.И.
+					.col-3
+						button.flat-button.bg-main Перейти к паспорту объекта
+				.gektars-item.row.d-flex.align-items-center
+					.col-1
+						span id23456
+					.col-3
+						span пос. Аракчино (234,345)
+					.col-2
+						span г. Краснодар
+					.col-3
+						span Николаев И.И.
+					.col-3
+						button.flat-button.bg-main Перейти к паспорту объекта
+				.gektars-item.row.d-flex.align-items-center
+					.col-1
+						span id23456
+					.col-3
+						span пос. Аракчино (234,345)
+					.col-2
+						span г. Краснодар
+					.col-3
+						span Николаев И.И.
+					.col-3
+						button.flat-button.bg-main Перейти к паспорту объекта
+				.gektars-item.row.d-flex.align-items-center
+					.col-1
+						span id23456
+					.col-3
+						span пос. Аракчино (234,345)
+					.col-2
+						span г. Краснодар
+					.col-3
+						span Николаев И.И.
+					.col-3
+						button.flat-button.bg-main Перейти к паспорту объекта
+				
+	container-fluid.map-bottom
+		.row.map-gektar-background
+			a.black-link(href="#") Увеличить
+			z
+block footer
+	include ../_footer.pug

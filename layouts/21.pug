@@ -1,0 +1,84 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/21.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container#order
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+				.head-title.d-flex.flex-column.justify-content-between
+					a.small(href="#") Оформление заказа
+					p.heading Заказ продукции
+		.row
+			p Для заказа продукции заполните форму:
+		.row
+			.col-6
+				form
+					.form-group
+						.msh-select
+							select
+								option(value="" selected) Физическое лицо
+								option(value="") Юридическое лицо
+					.form-group
+						.msh-input
+							input(type="text" placeholder="Николаева Надежда Владимировна")
+					.form-group
+						.msh-input
+							input(type="text" placeholder="г. Москва, ул. Восстания, 34, магазин “Лукошко”")
+					.form-group
+						.msh-input
+							input(type="text" placeholder="Ближайшая дата доставки: 17.12.2018")
+					p Добавить товары в заказ:
+					.form-group
+						.msh-select
+							select
+								option(value="" selected) Выбрать категорию
+					.form-group
+						.msh-select
+							select
+								option(value="") Выбрать продукцию
+					.form-group
+						.msh-input-number
+							input(type="number" placeholder="Количество товара")
+					.add.d-flex.align-items-center
+						a(href="#").icon-plus.bg-main.d-flex.justify-content-center.align-items-center
+							img(src="../img/icon-plus.png", alt="")
+						span Добавить к заказу
+			.col-6
+				.order-products.bg-fcfcfc
+					.order-products__wrapper
+						.heading Ваш заказ:
+						.category-list
+							a.category-name.small(href="#") Молочная продукция
+							.order-item.d-flex
+								span Молоко
+								hr
+								span 20ящ.
+							.order-item.d-flex
+								span Сметана
+								hr
+								span 5ящ.
+						.category-list
+							a.category-name.small(href="#") Мясная продукция
+							.order-item.d-flex
+								span Мясо
+								hr
+								span 50кг.
+							.order-item.d-flex
+								span Фарш
+								hr
+								span 19кг.
+						.total-price
+							.color-main.small К оплате:
+							.price 19 456 Р
+					.msh-buttons
+						a.flat-button.bg-main(href="28.html") 
+							span Оформить заказ
+						a.flat-button.bg-gray(href="#") 
+							span Заявка на смарт контракт
+
+
+
+block footer
+	include ../_footer.pug

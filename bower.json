@@ -1,0 +1,15 @@
+{
+  "name": "artwell-minselhos",
+  "version": "1.0.0",
+  "homepage": "https://github.com/blowalone/artwell-minselhos",
+  "authors": [
+    "Alexey Zhabassov <theblowalone@gmail.com>"
+  ],
+  "description": "A project when working in ARTWELL as a Frontend developer",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

@@ -1,0 +1,37 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/97.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.gektar
+		.head-wrapper
+			.row
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.row
+				p.heading Эффективный гектар
+		.more-gektar
+			.row
+				.col-12
+					.card
+						.card-body.d-flex.flex-column
+							.card-info
+								span 23 янв.
+								span.city-info г. Краснодар
+							
+							span Маслозавод закупает подсолнечник масличный, оплата любая, без отсрочки. Александр. 89184651007.Краснодарский край
+							span ООО "КУБАНЬКЛИЕНТСЕРВИС"
+							span Требуется транспортировка
+							span +7 (918) 465-10-07
+							span
+							span
+							span сегодня в 17:03:09
+			.row
+				.col-12
+					button.flat-button.bg-main(onclick="window.location = '98.html'") Отправить запрос
+block footer
+	include ../_footer.pug

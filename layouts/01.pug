@@ -1,0 +1,155 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/01.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container.subsystems
+		.row.d-flex.justify-content-center
+			.card.col-3(onclick="window.location = '03.html'")
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-cart.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Маркетплейс
+				.card-body
+					.card-list
+						ul
+							li Маркетплейс
+							li Аналитика
+			.card.col-3(onclick="window.location = '39.html'")
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-sprout.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span ЕФИС ЗСН
+				.card-body
+					.card-list
+						ul
+							li ЕФИС ЗСН (границы полей, паспорта)
+							li Землепользователи
+							li Отчеты
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-tractor.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Технадзор
+				.card-body
+					.card-list
+						ul
+							li Запрос сведений о состоянии тракторов, самоходных машин и прицепов к ним
+							li Запрос о действительности удостоверения тракториста-машиниста
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-bull-head.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Учет бланков ВСД
+				.card-body
+					.card-list
+						ul
+							li Исходящие ВСД
+							li Входящие ВСД
+		.row.justify-content-center
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plane.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span С/Х самолеты
+				.card-body
+					.card-list
+						ul
+							li Поиск и бронирование
+							li Агрохимикаты
+							li Тендеры
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-secure-shield.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Мониторинг продовольственной безопасности
+				.card-body
+					.card-list
+						ul
+							li Показатели
+							li Прогноз дефицита/избытка
+							li Отчеты
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-inbox.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span АИС реестров, реестров и НСИ
+				.card-body
+					.card-list
+						ul
+							li Электронные услуги
+							li Субсидии АПК
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-tractor.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Учет С/Х техники
+				.card-body
+					.card-list
+						ul
+							li Вся С/Х техника
+							li Мои договора
+							li Мои заявки
+							li Архив
+		.row.justify-content-center
+			.card.col-3(onclick="window.location = '95.html'")
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-graph.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span ЦИАС СГИО СХ
+				.card-body
+					.card-list
+						ul
+							li Мониторинг направлений C/Х
+			.card.col-3(onclick="window.location = '96.html'")
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-agronomy.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Эффективный гектар
+				.card-body
+					.card-list
+						ul
+							li Умное землепользование
+							li Спрос
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-warranty.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span СМАРТ-контракты
+				.card-body
+					.card-list
+						ul
+							li Торговая площадка
+							ul
+								li Неоформленные контракты
+								li Заключение сделки
+								li Выполняющиеся контракты
+							li Выгодные предложения
+			.card.col-3
+				.card-top.d-flex
+					.card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-mortarboard.png", alt="")
+					.card-heading.d-flex.align-items-center
+						span Земля знаний
+				.card-body
+					.card-list
+						ul
+							li Главная
+							li "Живые" встречи
+							li Видеокурсы
+							li Мои сертификаты
+block footer
+	include ../_footer.pug

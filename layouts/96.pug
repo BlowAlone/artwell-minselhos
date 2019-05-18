@@ -1,0 +1,93 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/96.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.gektar
+		.head-wrapper
+			.row
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.row
+				p.heading Эффективный гектар. Спрос
+		.filter
+
+			.row.d-flex.justify-content-between.align-items-center
+				.region-choose.col-3
+					a.black-link(href="#")
+						img(class="icon-search", src="../img/icon-search.png", alt="")
+						span Выберите регион
+				.col-6
+					label.product-search-label.d-flex.align-items-center(for="product-choose")
+						span Выбрать продукцию:
+						input(type="text", name="product-choose", placeholder="Масляничные")
+						a(href="#")
+							img(class="icon-down-arrow", src="../img/icon-down-arrow.png", alt="")
+				.col-3
+					button.flat-button.bg-main Применить фильтр
+		.demand-content
+			.d-flex.justify-content-between
+				span Спрос на масличные культуры:
+				a.black-link(href="#") Показать на карте
+					img(class="icon-down-arrow", src="../img/icon-down-arrow.png", alt="")
+			.demand-diagrams.d-flex
+				img(src="../img/demand1.png", alt="")
+				img(src="../img/demand2.png", alt="")
+				img(src="../img/demand3.png", alt="")
+				img(src="../img/demand4.png", alt="")
+		.tenders-content
+			div Тендеры:
+			.d-flex.flex-column
+				.tenders-item.row.d-flex.align-items-center(onclick="window.location = '97.html'")
+					.col-1
+						span 23 янв.
+					.col-6
+						span Закупаем подсолнечник масличный, оплата нал, безнал, с ндс
+					.col-2
+						span г. Краснодар
+					.col-3
+						span ООО "КУБАНЬКЛИЕНТСЕРВИС"
+				.tenders-item.row.d-flex.align-items-center
+					.col-1
+						span 21 янв.
+					.col-6
+						span Лён коричневый
+					.col-2
+						span г. Самара
+					.col-3
+						span ООО "ЮЖНЫЙАГРО"
+				.tenders-item.row.d-flex.align-items-center
+					.col-1
+						span 21 янв.
+					.col-6
+						span Рапс на постоянной основе
+					.col-2
+						span г. Калининград
+					.col-3
+						span ООО "ЧЕМПИОН"
+				.tenders-item.row.d-flex.align-items-center
+					.col-1
+						span 19 янв.
+					.col-6
+						span Лён масличный
+					.col-2
+						span г. Воронеж
+					.col-3
+						span ООО "ГК АГРОБИЗНЕС"
+				.tenders-item.row.d-flex.align-items-center
+					.col-1
+						span 18 янв.
+					.col-6
+						span Рапс на постоянной основе
+					.col-2
+						span г. Калининград
+					.col-3
+						span ООО "ЧЕМПИОН"
+	container-fluid.map-bottom
+		.row.map-gektar-background
+block footer
+	include ../_footer.pug

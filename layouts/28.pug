@@ -1,0 +1,51 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/21.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.order-done
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.small(href="#") Оформление заказа
+				p.heading Сельскохозяйственное предприятие № 234
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+		.order-print.d-flex.flex-column.align-items-center
+			span Спасибо за заказ!
+			a(href="#") Распечатать чек
+		.d-flex.justify-content-center
+			.order-products.bg-fcfcfc
+				.order-products__wrapper
+					.heading Ваш заказ:
+					.category-list
+						a.category-name.small(href="#") Молочная продукция
+						.order-item.d-flex
+							span Молоко
+							hr
+							span 20ящ.
+						.order-item.d-flex
+							span Сметана
+							hr
+							span 5ящ.
+					.category-list
+						a.category-name.small(href="#") Мясная продукция
+						.order-item.d-flex
+							span Мясо
+							hr
+							span 50кг.
+						.order-item.d-flex
+							span Фарш
+							hr
+							span 19кг.
+					.delivery-date
+						.color-main.small Дата доставки:
+						.date 17.12.2018
+				.msh-buttons
+					a.flat-button.bg-main.button-large(href="29.html") 
+						span Перейти к ожидаемым заказам
+block footer
+	include ../_footer.pug

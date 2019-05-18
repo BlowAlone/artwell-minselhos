@@ -1,0 +1,21 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/00.css', rel='stylesheet')
+block body
+	.container.d-flex.align-items-center
+		form.form-signin
+			.d-flex.justify-content-between.align-items-center
+				img.d-inline-block.logo(src='../img/logo.svg')
+				h2.d-inline-block.form-signin-heading Специализированный программно-аппаратный комплекс (СПАК) управления развитием сельского и лесного хозяйства с подсистемой картографии
+			label.sr-only(for='inputEmail') Email address
+			input#inputEmail.form-control(type='email', placeholder='Логин', autofocus='')
+			label.sr-only(for='inputPassword') Password
+			input#inputPassword.form-control(type='password', placeholder='Пароль' )
+			.d-flex.flex-column.align-items-center
+				a(href='#') Забыли пароль?
+				//- form(action="html/01.html")
+					//- button.btn.btn-main(type='submit') Войти
+				a.flat-button.bg-main.btn-main(href="01.html")
+					span Войти
+				a(href='#') Зарегистрироваться

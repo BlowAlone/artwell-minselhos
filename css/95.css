@@ -1,0 +1,39 @@
+.head-wrapper {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.cias-head .product-search {
+    width: 100%;
+}
+.cias-head .product-search .product-search-label {
+    margin-bottom: 0;
+}
+.cias-head .product-search .product-search-label + input{
+    width: 70%;
+    border: 0;
+    margin-left: 10px;
+}
+.cias-head .product-search .product-search-label + input:focus {
+    outline: none;  
+}
+.cias-container .cias-content ul li::before {
+    content: "";
+}
+.cias-container .cias-content  li {
+    margin-bottom: 2rem;
+}
+.cias-container .cias-content span {
+    display: block;
+    margin-bottom: 2rem;
+}
+.cias-container .cias-content .federal-district__item div {
+    margin: 2rem 0;
+
+}
+.cias-container .specific-production__item img {
+    width: 300px;
+    height: 300px;
+}

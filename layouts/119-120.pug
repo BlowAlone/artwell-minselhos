@@ -1,0 +1,202 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/03.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container.trading-platforms
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.heading(href="#") Молоко 3,2%
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.head-buttons
+				a(href="#") Показать на карте всех производителей данной продукции
+		nav
+			#nav-tab.nav.nav-tabs(role='tablist')
+				a#nav-shops-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-shops' role='tab' aria-controls='nav-shops' aria-selected='true') Предложения магазинов
+				a#nav-about-tab.nav-item.nav-link(data-toggle='tab' href='#nav-about' role='tab' aria-controls='nav-about' aria-selected='false') Подробнее о товаре
+				a#nav-map-tab.nav-item.nav-link(data-toggle='tab' href='121.html' role='tab' aria-controls='nav-map' aria-selected='false' onclick="window.location = '121.html'") Карта
+		.row
+			.col-6.nav-shops_product-img.d-flex.justify-content-center.align-items-center
+				img(src="../img/icon-picture.png" alt="")
+			.col.nav-shops_product-info.d-flex.flex-column
+				.nav-shops_product-info-item.d-flex.justify-content-between.align-items-center
+					span Производитель
+					span ООО "Производитель"
+				.nav-shops_product-info-item.d-flex.justify-content-between.align-items-center
+					span Вид молока
+					span Коровье
+				.nav-shops_product-info-item.d-flex.justify-content-between.align-items-center
+					span Жирность
+					span 3,2%
+				.nav-shops_product-info-item.d-flex.justify-content-between.align-items-center
+					span Объем
+					span 1 л
+				.nav-shops_product-info-item.d-flex.justify-content-between.align-items-center
+					span Способ обработки
+					span Ультрапастеризация
+				a.nav-shops_product-info-item.small(href="#") Подробная информация
+				.nav-shops_product-price.d-flex.justify-content-between
+					.d-flex.flex-column.align-items-center.justify-content-between
+						.nav-shops_product-lowest-price.d-flex.justify-content-between.align-items-center
+							span Самая низкая цена
+							span.product-price 56 Р
+						button.flat-button.bg-main Заказать
+					a.gray-link(href="#") Все цены
+					.company-name Сельскохозяйственное мероприятие
+		#nav-tabContent.tab-content
+			#nav-shops.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-shop-tab')
+				.other-shops.d-flex.flex-column
+					.row.other-shops__item
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Сельскохозяйственное предприятие 234
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Возможно оформление смарт-контракта
+						.col-3.d-flex.align-items-center.justify-content-center
+							div.product-price 56 Р
+						.col-3.d-flex.align-items-center.justify-content-center
+							button.flat-button.bg-main Заказать
+					.row.other-shops__item
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Сельскохозяйственное предприятие 234
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Возможно оформление смарт-контракта
+						.col-3.d-flex.align-items-center.justify-content-center
+							div.product-price 76 Р
+						.col-3.d-flex.align-items-center.justify-content-center
+							button.flat-button.bg-main Заказать
+					.row.other-shops__item
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Сельскохозяйственное предприятие 234
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Возможно оформление смарт-контракта
+						.col-3.d-flex.align-items-center.justify-content-center
+							div.product-price 78 Р
+						.col-3.d-flex.align-items-center.justify-content-center
+							button.flat-button.bg-main Заказать
+					.row.other-shops__item
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Сельскохозяйственное предприятие 234
+						.col-3.d-flex.align-items-center.justify-content-center
+							div Возможно оформление смарт-контракта
+						.col-3.d-flex.align-items-center.justify-content-center
+							div.product-price 97 Р
+						.col-3.d-flex.align-items-center.justify-content-center
+							button.flat-button.bg-main Заказать
+					a.open-all.black-link(href="#") Раскрыть все
+				.row.interesting 
+					p.heading Вас также может заинтересовать
+					col-12.d-flex.flex-wrap.align-items-center
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Молоко 3,2%
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 79 р/шт.
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Молоко 2,5%
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 58 р/шт.
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Йогурт
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 39 р/шт.
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Сметана
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 79 р/шт.
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Простокваша
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 79 р/шт.
+						.card.card-product
+							a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-plus.png", alt="")
+							.card-image.d-flex.justify-content-center.align-items-center
+								img(src="../img/icon-picture.png", alt="")
+							.card-title
+								span Творог 4%
+							.card-price.d-flex.justify-content-between
+								span Цена
+								a(href="#") 79 р/шт.
+			#nav-about.tab-pane.fade(role='tabpanel' aria-labelledby='nav-about-tab')
+				.row
+					.product-description Молоко Parmalat Natura Premium 3.5% 1л - это классический напиток, приготовленный по европейским стандартам качества из отборного натурального молока без добавления сухого молока, красителей и консервантов. Благодаря ультрапастеризации продукт сохранил все витамины и микроэлементы (в том числе кальций, фосфор и витамин D), которыми так славится свежее коровье молоко, при этом он может храниться дольше пастеризованного. Расфасован в герметичный пакет с отвинчивающейся крышечкой.   
+				.row.d-flex.flex-column
+					.big-text.d-flex.justify-content-between
+						span Способ обработки
+						span ультрапастеризация
+					.big-text.d-flex.justify-content-between
+						span Жирность
+						span 3,2%
+					.big-text.d-flex.justify-content-between
+						span Объем
+						span 1 л
+					.big-text.d-flex.justify-content-between
+						span Вид молока
+						span коровье
+					.big-text.d-flex.justify-content-between
+						span Упаковка
+						span тетра-пак
+					.big-text.d-flex.justify-content-between
+						span Стандарты производства
+						span ГОСТ Р 32252-2013
+					.big-text.d-flex.justify-content-between
+						span Срок годности
+						span при температуре от +2'°С до +25°С 6 месяцев
+					.big-text.d-flex.justify-content-between
+						span Энергетическая ценность в 100 г
+						span 62 ккал
+					.big-text.d-flex.justify-content-between
+						span Белки в 100 г
+						span 2,8 г
+					.big-text.d-flex.justify-content-between
+						span Жиры в 100 г
+						span 3,5 г
+					.big-text.d-flex.justify-content-between
+						span Углеводы в 100 г
+						span 4,7 г
+					.big-text.d-flex.justify-content-between
+						span Состав
+						span нормализованное молоко
+					.big-text.d-flex.justify-content-between
+						span Срок годности
+						span 6 месяцев
+		.row
+			a.show-manufactorers.black-link(href="#") Показать на карте всех производителей данной продукции
+	.container-fluid.map-bottom
+		.row.map-background
+			a.black-link(href="#") Увеличить
+block footer
+	include ../_footer.pug

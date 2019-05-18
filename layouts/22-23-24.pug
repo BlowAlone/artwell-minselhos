@@ -1,0 +1,86 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/25.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container-fluid
+		nav.profile-top.d-flex
+			#profile-tab.nav.nav-tabs(role='tablist')
+				a#profile-info-tab.third.nav-item.nav-link.active(data-toggle='tab' href='#profile-info' role='tab' aria-controls='profile-info' aria-selected='true') Личная информация
+				a#my-shop-tab.third.nav-item.nav-link(data-toggle='tab' href='#my-shop' role='tab' aria-controls='my-shop' aria-selected='false') Мой магазин
+				a#agro-farm-tab.third.nav-item.nav-link(data-toggle='tab' href='#agro-farm' role='tab' aria-controls='agro-farm' aria-selected='false') Земельное хозяйство
+	.container
+		#profile-tabContent.tab-content
+			#profile-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='profile-info-tab')
+				.row
+					.col-6
+						span Заполните информацию о себе для быстрого заполнения полей в заказах:
+					.col-6
+						span Дополнительно:
+				form.row(action="#")
+					.col-6.d-flex.flex-column
+						.form-group
+							.msh-select
+								select
+									option(value="" selected) Физическое лицо
+									option(value="") Юридическое лицо
+						.form-group
+							.msh-input
+								input(type="text" placeholder="Николаева Надежда Владимировна")
+						.form-group
+							.msh-input
+								input(type="text" placeholder="г. Москва, ул. Восстания, 34, магазин “Лукошко”")
+					.col-6.d-flex.flex-column
+						.form-group
+							input(type="text" placeholder="Номер телефона")
+						.form-group
+							input(type="email" placeholder="E-mail")
+						.form-group
+							a(href="#") Изменить пароль аккаунта
+			#my-shop.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='profile-info-tab')
+				.add.d-flex.align-items-center
+					a(href="#").icon-plus.bg-main.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					span Добавить магазин производителя
+					a(href="#") Ознакомиться с инструкцией
+				.shops-list
+					span Все магазины:
+					.shop-card
+						p.heading.d-inline Сельскохозяйственное предприятие № 234
+						a.small(href="#") Редактировать магазин
+						button.d-block.flat-button.bg-gray Каталог товаров
+						 
+
+			#agro-farm.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='agro-farm-tab')
+				.add.d-flex.align-items-center
+					a(href="#").icon-plus.bg-main.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					span Добавить мои с/х угодия по кадастровому номеру
+				.agro-farm__card
+					.color-main Владелец
+					hr
+					.place.d-flex.align-items.center
+						div РТ, пос. Лаишево
+						div.ml-20.agro-farm__id.color-main ID 123456
+					.square
+						.small.color-main Площадь поля
+						div 345 344 Га
+					button.bg-gray.flat-button Паспорт объекта
+					button.ml-20.bg-main.flat-button Назначить объект землепользователю
+				.agro-farm__card
+					.color-main Землепользователь
+					hr
+					.place.d-flex.align-items.center
+						div РТ, пос. Лаишево
+						div.ml-20.agro-farm__id.color-main ID 123456
+					.square
+						.small.color-main Площадь поля
+						div 345 344 Га
+					button.bg-gray.flat-button Паспорт объекта
+				
+
+block footer
+	include ../_footer.pug

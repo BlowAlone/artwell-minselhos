@@ -1,0 +1,95 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/95.css', rel='stylesheet')
+
+block header
+	include ../_header.pug
+block body
+	.container.cias-container
+		.head-wrapper
+			.row
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.row.cias-head.head-title.d-flex
+				.col-3.d-flex.justify-content-center.align-items-center Выберите направление мониторинга
+				.col-5.d-flex.justify-content-center.align-items-center Прогноз по производству и потерблению продукции
+				.col-4.product-search.d-flex.justify-content-center.align-items-center
+					label.product-search-label.d-flex.align-items-center(for="product-search") Продукция
+					input(type="text", name="product-search" placeholder="например, зерно")
+					img(class="icon-down", src="../img/icon-down.png", alt="")
+		.cias-content
+			.row
+				.col-3.federal-district.d-flex.flex-column
+					.federal-district__item
+						span.color-main Федеральные округа
+						div СЗФО
+						ul
+							li Архангельская область
+							li Вологодская область
+							li Калининградская область
+							li Ленинградская область
+							li Мурманская область
+							li Ненецкий автономный ок...
+							li Новгородская область
+							li Псковская область
+							li Республика Карелия
+							li Республика Коми
+							li Санкт-Петербург
+						div СКФО
+						div СФО
+						div УФО
+						div ЮФО
+				.col-2.production.d-flex.flex-column
+					.production__item
+						span.color-main Производство
+						ul
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 345564
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 345564
+							li 496041
+							li 131789
+
+				.col-2.consumption.d-flex.flex-column
+					.consuption__item.d-flex.flex-column
+						span.color-main Потребление
+						ul
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 345564
+							li 496041
+							li 131789
+							li 123345
+							li 234453
+							li 345564
+							li 496041
+							li 131789
+				.col-3.specific-production.d-flex.flex-column
+					.specific-production__item
+						span.color-main Производство по видам зерновых
+						img(src="../img/diagram.png")
+				.col-2.production-dynamic.d-flex.flex-column
+					.production-dynamic__item
+						span.color-main Динамика производства
+						//- img(src="../img/diagram2.jpg")
+
+block footer
+	include ../_footer.pug

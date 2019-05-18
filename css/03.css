@@ -1,0 +1,206 @@
+.trading-platforms .back {
+    padding: 1rem 0;
+}
+.trading-platforms .filter .filter-search {
+    width: 887px;
+    height: 50px;
+    border: 1px solid #F9F9F9;
+}
+
+.trading-platforms .filter .icon-down-arrow {
+    padding-left: 1rem;
+}
+.trading-platforms .filter .filter-search .filter-search-label {
+    width: 220px;
+    margin: 0;
+}
+.trading-platforms .filter .filter-search .filter-search-label .icon-search {
+    padding: 0 1rem;
+}
+.trading-platforms .filter .filter-search input {
+    width: 647px;
+    border: 0;
+}
+.trading-platforms .filter .filter-search input:focus {
+    outline: none;
+    border: 0;
+}
+.trading-platforms .filter-sort {
+    width: 400px;
+    padding: 1rem 0;
+}
+.trading-platforms .filter-sort a {
+    color: #B5B5B5;
+    text-decoration: none;
+}
+.trading-platforms .filter-sort a.active {
+    color: #000;
+}
+
+
+.trading-platforms .col-9 {
+    padding: 0;
+}
+.trading-platforms .card-product {
+    height: 293px;
+    width: 208px;
+    border: 0;
+    border-radius: 0;
+    margin-right: 18px;
+    margin-bottom: 35px;
+}
+.trading-platforms .card-product:hover {
+    outline: 1px dotted #D19B3F;
+}
+.trading-platforms .card-product .card-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #D19B3F;
+    top: 0;
+    right: 0;
+}
+.trading-platforms .card-product .card-image {
+    height: 207px;
+}
+.trading-platforms .card-product .card-title {
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+
+.trading-platforms .col-3 {
+    padding: 0;
+}
+.trading-platforms .product-filter {
+    min-height: 940px;
+    padding: 40px 66px 58px 49px;
+    background-color: #F5F5F5;
+    max-width: 318px;
+}
+.trading-platforms .product-filter .smart-bid__tick  {
+    background: url(../img/icon-claim.svg) no-repeat center center / contain;
+}
+.trading-platforms .product-filter .in-stock-info__tick   {
+    background: url(../img/icon-checked.svg) no-repeat center center / contain;
+}
+.trading-platforms .product-filter ul li::before {
+    content: "";
+}
+.trading-platforms .product-filter .product-filter-price {
+    padding-top: 29px;
+}
+.trading-platforms .product-filter .product-filter-price input {
+    height: 50px;
+    width: 91px;
+    border: 0;
+    padding: 14px 50px 14px 19px;
+    background-color: #fff;
+}
+.trading-platforms .in-stock-info,
+.trading-platforms .smart-bid,
+.trading-platforms .manufactorer {
+    margin: 1rem 0;
+}
+.trading-platforms .in-stock-info__tick,
+.trading-platforms .smart-bid__tick {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin-right: 1rem;
+}
+.trading-platforms .manufactorer .manufactorer-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.trading-platforms .manufactorer .manufactorer-list li {
+    padding-top: 52px;
+    list-style: none;
+}
+.trading-platforms .manufactorer .manufactorer-list li span {
+    margin-left: 1rem;
+}
+.trading-platforms .manufactorer .manufactorer-icon {
+    width: 50px;
+    height: 50px;
+}
+.trading-platforms .manufactorer .manufactorer-list li:first-child {
+    padding-top: 36px;
+}
+.trading-platforms .manufactorer .manufactorer-list li:last-child {
+    padding-bottom: 41px;
+}
+.trading-platforms .extended-filter {
+    padding-top: 63px;
+}
+
+.trading-platforms .show-manufactorers {
+    font-size: 1.5rem;
+    padding: 80px 0 60px 0;
+}
+.trading-platforms.milk-products {
+    margin-bottom: 2rem;
+}
+.trading-platforms #nav-tab .nav-link {
+    border: 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.trading-platforms #nav-tab .nav-link.active {
+    border-bottom: 2px solid #D19B3F;
+}
+.trading-platforms #nav-tabContent #nav-shops .row {
+    margin-top: 50px;
+}
+.trading-platforms .nav-shops_product-img {
+    height: 443px;
+}
+.trading-platforms .nav-shops_product-info {
+    min-height: 443px;
+    margin-left: 130px;
+}
+.trading-platforms .nav-shops_product-info-item {
+    padding-top: 30px;
+}
+.trading-platforms .nav-shops_product-info-item.small {
+    padding-top: 0px;
+    margin: 70px 0;
+}
+.nav-shops_product-lowest-price + .flat-button {
+    height: 46px;
+    padding: 10px 20px;
+}
+.company-name {
+    width: 208px;
+}
+.nav-shops_product-price {
+    height: 90px;
+}
+.other-shops__item {
+    height: 116px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+}
+.trading-platforms #nav-tabContent #nav-shops .other-shops .row {
+    margin-top: 22px;;
+}
+.trading-platforms #nav-tabContent #nav-shops .other-shops .open-all {
+    text-decoration: underline;
+    margin-top: 51px;
+    margin-bottom: 51px;
+}
+.trading-platforms #nav-tabContent #nav-shops .interesting .heading{
+    margin-bottom: 37px;
+}
+.trading-platforms #nav-tabContent #nav-about .product-description {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.trading-platforms #nav-tabContent #nav-about .big-text {
+    padding-bottom: 30px;
+}
+.trading-platforms .card-image {
+    background-color: #F5F5F5;
+}

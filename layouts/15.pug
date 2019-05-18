@@ -1,0 +1,96 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/15.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container#manufactorer-about
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.small(href="#") Овощное хозяйство
+				p.heading Сельскохозяйственное предприятие № 234
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.head-buttons
+				a.flat-button.bg-gray(href="16.html") Каталог товаров
+				a.flat-button.bg-main(href="21.html") Сделать заказ
+		.row
+			.col-6.manufactorer-contacts
+				p.heading Контакты
+					.main-contacts.d-flex.flex-column
+						span.small.color-main Телефон:
+						.contact-number +7 (499) 705-65-52
+						span.small.color-main Факс:
+						.contact-number +7 (499) 705-65-52
+						span.small.color-main Региональный менеджер:
+						.contact-number +7 (916) 151-15-48 (Шматько Владимир Алексеевич )
+						span.small.color-main Email:
+						.contact-email agrimatco.russia@agrimatco-eu.com
+					.more-info.d-flex.flex-column
+						span.small.color-main ИНН:
+						.more-info-number 7710536085
+						span.small.color-main КПП:
+						.more-info-number 771001001
+						span.small.color-main ОКПО:
+						.more-info-number 72927100
+						span.small.color-main ОГРН:
+						.more-info-number 1047796223650
+						span.small.color-main ОКФС:
+						.more-info-number 16 - Частная собственность
+						span.small.color-main ОКОГУ:
+						.more-info-number 4210014 - Организации, учрежденные юридическими лицами или гражданами, или юридическими лицами и гражданами совместно
+						span.small.color-main ОКОПФ:
+						.more-info-number 12267 - Непубличные акционерные общества
+						span.small.color-main ОКТМО:
+						.more-info-number 45380000000
+						span.small.color-main ФСФР:
+						.more-info-number 49086-H
+						span.small.color-main ОКАТО:
+						.more-info-number 45286575 - Москва, Административные округа г Москвы, Центральный, Районы Центрального административного округа, Пресненский
+				a.flat-button.bg-main(href="21.html") Сделать заказ					
+			.col-6.manufactorer-activities
+				p.heading Виды-деятельности
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Молочное
+						a.activity-link(href="17.html") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Мясное
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Свинодельческое
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Молочно-Овощное
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Овощное
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Птицеводческое
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Племенное
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Семеноводческое
+						a.activity-link(href="#") Каталог товаров
+					.activity.d-flex.justify-content-between.align-items-center
+						.activity-name Тепличное
+						a.activity-link(href="#") Каталог товаров
+				a.flat-button.bg-gray(href="16.html") Каталог товаров
+		section.row.manufactorers-near.d-flex.flex-column.justify-content-between
+			.heading Предприятия рядом
+			.nearest-manufactorers
+				span ООО "АВТОСТИЛЬ", 
+				span ООО "МЕДИА ГРУПП", 
+				span ООО "ФАСТ ФУД ГРУПП", 
+				span - 
+				a(href="#") Посмотреть все
+	.container-fluid.map-bottom
+		.row.map-big-background
+			a.black-link(href="#") Увеличить
+					
+block footer
+	include ../_footer.pug

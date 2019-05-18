@@ -1,0 +1,9 @@
+.order-pending .order-panel {
+    width: 660px;
+}
+.order-pending .order-products + .order-products {
+    margin-left: 1rem;
+}
+.order-pending__items {
+    margin-bottom: 100px;
+}

@@ -1,0 +1,10 @@
+.add-shops .add-category ul {
+    padding-inline-start: 1rem;
+}
+.add-shops .add-category a {
+    display: block;
+}
+.add-shops .add-category ul li,
+.add-shops .add-category a {
+    padding-top: 2rem;
+}

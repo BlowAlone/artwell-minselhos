@@ -1,0 +1,142 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/03.css', rel='stylesheet')
+block header
+	include ../_header.pug
+block body
+	.container-fluid.head-fluid.trading-platforms.katalog
+		.head-wrapper.d-flex.align-items-center.justify-content-between
+			.head-title.d-flex.flex-column.justify-content-between
+				a.small(href="#") Каталог продукции, выпускаемой производителем
+				a.heading(href="#") Категории продукции
+				.back.d-block
+					a.small(href="#") Назад
+					img(src="../img/icon-back-arrow.png", alt="")
+			.head-buttons
+				button.flat-button.bg-main Сделать заказ
+	.container.trading-platforms.katalog
+		.row
+			.col-12.d-flex.flex-wrap
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Молоко 3,2%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Молоко 2,5%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 58 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Йогурт
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 39 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Сметана
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Простокваша
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Творог 4%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Творог 9%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Сметана
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Сливки
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Сливки обезжиренные
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Молоко 3,2%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+				.card.card-product
+					a(href="#").card-icon.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-plus.png", alt="")
+					.card-image.d-flex.justify-content-center.align-items-center
+						img(src="../img/icon-picture.png", alt="")
+					.card-title
+						span Молоко 3,2%
+					.card-price.d-flex.justify-content-between
+						span Цена
+						a(href="#") 79 р/шт.
+block footer
+	include ../_footer.pug

@@ -1,0 +1,42 @@
+.container.subsystems {
+    padding-top: 32px;
+    padding-bottom: 92px;
+}
+.subsystems .card {
+    height: 372px;
+    max-width: 320px;
+    padding: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.subsystems .card-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.subsystems .card-top .card-heading {
+    padding-left: 26px;
+    background-color: #F5F5F5;
+    height: 70px;
+    width: 250px
+}
+.subsystems .card-top .card-icon {
+    background-color: #D09A3F;
+    width: 70px;
+    height: 70px;
+}
+.subsystems .card-body {
+    margin-top: 70px;
+    padding: 40px 25px 40px 70px;
+}
+.subsystems .card-body .card-list ul {
+    padding-left: 20px;
+}
+.subsystems .card-body .card-list ul li {
+    padding-top: 21px;
+}
+.subsystems .card-body .card-list ul ul li{
+    font-size: 0.75rem;
+    padding-top: 10px;
+    color: #5F6164;
+}

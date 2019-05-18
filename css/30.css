@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+.order-panel {
+    width: 660px;
+}
+.order-pending {
+    margin-bottom: 3rem;
+}
+.order-pending .order-products {
+    margin-top: 0;
+}

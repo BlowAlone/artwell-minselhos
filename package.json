@@ -1,0 +1,21 @@
+{
+  "name": "artwell-minselhos",
+  "version": "1.0.0",
+  "description": "A project when working in ARTWELL as a Frontend developer",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blowalone/artwell-minselhos.git"
+  },
+  "author": "Alexey Zhabassov",
+  "license": "ISC",
+  "homepage": "http://2001.testartwell.ru/agro/html/",
+  "devDependencies": {
+    "pug": "^2.0.0-beta11"
+  },
+  "dependencies": {
+    "sass": "^1.17.3"
+  }
+}

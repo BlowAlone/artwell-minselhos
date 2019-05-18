@@ -1,0 +1,76 @@
+.gektar .region-choose {
+    height: 50px;
+}
+.gektar .filter {
+    height: 100px;
+}
+.gektar .filter .region-choose span {
+    margin-left: 1rem;
+}
+.gektar .filter .product-search-label input {
+    width: 70%;
+    margin: 0 1rem;
+    border: 0;
+}
+.gektar .filter .product-search-label input:focus {
+    outline: none;
+}
+.gektar .demand-content .icon-down-arrow {
+    margin-left: 1rem;
+}
+.gektar .tenders-content {
+    margin-bottom: 3rem;    
+}
+.gektar .tenders-content .tenders-item {
+    height: 100px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 23px;
+}
+.gektar .filter-selhos {
+    height: 280px;
+}
+.gektar .filter-selhos .region-choose span {
+    margin-left: 1rem;
+}
+.gektar .filter-selhos .selhos-search-label input {
+    margin-left: 0.5rem;
+}
+.gektar .planned-to-grow .selhos-search-label {
+    margin: 3rem 0 3rem 3rem;
+}
+.gektar .planned-to-grow input {
+    width: 70%;
+    margin-left: 0.5rem;
+}
+.gektar .filter-selhos .agroecology-top {
+    margin-top: 25px;
+}
+.gektar .filter-selhos .agroecology-top a {
+    margin-left: 2rem;
+    text-decoration: none;
+}
+.gektar .filter-selhos .agroecology-top a img {
+    transform: rotate(180deg);
+}
+.agroecology .agroecology-item {
+    height: 39px;
+    padding-left: 2rem;
+}
+.agroecology .agroecology-item:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+.agroecology .agroecology-item input::placeholder {
+    color: #000;
+}
+.free-gektars {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.free-gektars .gektars-item {
+    height: 100px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 23px;
+}
+.free-gektars .gektars-item button {
+    width: 100%;
+}
